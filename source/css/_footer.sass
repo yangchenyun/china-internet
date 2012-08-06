@@ -1,0 +1,250 @@
+footer 
+  background-position: 0 -117px
+  background-repeat: repeat-x
+  display: block
+  width: 100%
+  height: 25px
+  min-width: 950px
+  position: absolute
+  top: 100%
+  margin-top: -25px
+  font-size: 11px
+  color: #666666
+  z-index: 2000
+  
+  span.curator 
+    margin: 8px 0 0 13px
+    float: left
+
+  div.print a,
+  div.print a:hover,
+  div.lights a,
+  div.lights a:hover,
+  div.fullscreen a,
+  div.fullscreen a:hover,
+  div.sharing,
+  div.sharing:hover 
+    +transition(background-color,color 0.1s,0.1s linear)
+  
+  
+  div.right-side 
+    float: right
+    margin-right: 0
+  
+    
+    div 
+      display: block
+      float: left
+    
+      
+    div.divider 
+      position: relative
+      top: 1px
+      width: 1px
+      height: 24px
+      background-color: #d2d2d2
+      display: inline-block
+      border: solid white 1px
+      border-bottom: none
+      border-top: none
+      
+  div.sharing:hover 
+    color: #b41e21
+    background-color: rgba(255,255,255,0.7)
+    
+  div.sharing 
+    padding: 7px 18px 0
+    margin-top: 1px
+  
+    
+    input.clipboard-notification 
+      display: none
+      width: 160px
+      height: 14px
+      padding: 7px 5px
+      text-align: center
+      border-radius: 3px
+      border: 1px solid #999
+      background-color: #faffca
+      position: absolute
+      top: -40px
+      margin-left: -10px
+      font-size: 12px
+      color: #333
+    
+    
+    p 
+      float: left
+    
+    ul 
+      margin-left: 2px
+      width: 85px
+      float: left
+    
+      li 
+        margin: -3px 0px 0 5px
+        float: left
+    
+      li a 
+        width: 16px
+        height: 21px
+        display: block
+        
+        
+      li.facebook a 
+        background-position: -7px -150px
+    
+      li.facebook a:hover 
+        background-position: -7px -174px
+    
+      li.facebook a:active 
+        background-position: -7px -198px
+          
+        
+      li.twitter a 
+        background-position: -26px -150px
+    
+      li.twitter a:hover 
+        background-position: -26px -174px
+    
+      li.twitter a:active 
+        background-position: -26px -198px
+        
+      li.url a 
+        background-position: -63px -150px
+    
+      li.url a:hover 
+        background-position: -63px -174px
+    
+      li.url a:active 
+        background-position: -63px -198px
+        
+  
+  div.print 
+    margin: 0
+  
+    a 
+      float: left
+      margin: 0
+      padding: 7px 14px 0
+      margin-top: 1px
+      height: 17px
+      color: #666666
+      text-decoration: none
+    
+    a:hover 
+      color: #b41e21
+      background-color: rgba(255,255,255,0.7)
+    
+    a span.icon 
+      background-position: -102px -161px
+      width: 20px
+      height: 17px
+      display: block
+      margin-top: -3px
+      float: left
+    
+  
+  div.lights-wrapper 
+    width: 117px
+    height: 17px
+  
+  div.lights, .dark .lights.clone
+  
+    margin: 0
+  
+  div.lights a, .dark .lights.clone a
+    float: left
+    width: 117px
+    height: 17px
+    margin: 0
+    padding: 7px 0 0
+    margin-top: 1px
+    color: #666666
+    position: relative
+    text-decoration: none
+    text-indent: -10000em
+    background-position: -354px -727px
+    +transition(color .4s linear)
+    
+  .dark .lights.clone a 
+    background-position: -354px -759px
+  
+  div.lights.clone 
+    background: none
+  
+  .lights a:hover 
+    background-color: rgba(255,255,255,0.7)
+  
+  .lights a span.icon,
+  .dark .lights a span.icon
+    background-position: -386px -794px
+    width: 25px
+    height: 14px
+    display: block
+    position: absolute
+    top: 6px
+    +transition(left .2s linear)
+
+  .lights a span.icon 
+    left: 32px
+  
+  .lights a span.icon.off
+    left: 57px
+    +transition(left .1s linear)
+  
+  div.fullscreen-wrapper 
+    width: 117px
+    height: 17px
+  
+  div.fullscreen,
+  .fullscreen div.fullscreen.clone
+    margin: 0
+  
+  div.fullscreen a,
+  div.fullscreen.clone a
+    margin: 0
+    padding: 7px 0 0
+    margin-top: 1px
+    height: 17px
+    width: 117px
+    color: #666666
+    position: relative
+    text-decoration: none
+    text-indent: -10000em
+    background-position: -354px -817px
+    +transition(color .4s linear)
+    +transition(background-color .13s linear)
+    
+  div.fullscreen a:hover 
+    background-color: rgba(255,255,255,0.7)
+  
+  div.fullscreen.clone a:hover 
+    background-color: rgba(255,255,255,0)
+  
+  div.fullscreen.clone 
+    background: none
+    
+  div.fullscreen a span.icon,
+  .fullscreen div.fullscreen a span.icon
+  
+    background-position: -386px -884px
+    width: 25px
+    height: 14px
+    display: block
+    position: absolute
+    top: 6px
+    +transition(left .2s linear)
+  
+  div.fullscreen a span.icon 
+    left: 32px
+  
+  div.fullscreen a span.icon.off
+  
+    left: 57px
+    +transition(left .1s linear)
+        
+  ul li 
+    list-style: none
+    display: inline
+    margin: 5px

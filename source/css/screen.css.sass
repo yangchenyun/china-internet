@@ -1,0 +1,128 @@
+//
+// Main Stylesheet
+//
+@import "reset.css"
+@import "compass"
+
+/**
+ * Applies the background to all sprites.
+ */
+header, header a.logo, header nav ul li.table-of-things a, header input[type="text"], footer, footer div.sharing a, footer div.print a span.icon, footer div.lights a, .lights a span.icon, div.lights.clone, div.lights.clone a, .lights.clone a span.icon, .fullscreen a span.icon, div.fullscreen.clone, div.fullscreen.clone a, .fullscreen.clone a span.icon, footer div.fullscreen a, #shadow .shadow-left, #shadow .shadow-right, #search-dropdown div.background-top, #search-dropdown div.background-bottom, #spine div, #chapter-nav ul li, #chapter-nav a.over div.small-book, #table-of-contents ul li div.medium-book, #table-of-contents a.go-back, #pagination-prev div.arrow, #pagination-next div.arrow, #overlay div.bookmark, #overlay div.bookmark .content a.close, #overlay div.print, #overlay div.print a.close, #overlay div.print p, #overlay div.print a.downloadPdf:hover, #overlay div.print a.printBook:hover, #credits div.people ul li h3, #credits div.share ul li span.icon, #front-cover-bookmark, #sharer div.background-top, #sharer div.background-bottom, #sharer div.content ul li a, #sharer div.content p.instruction span, #sharer div.content ul li.print #front-cover-arrow, #paperstack .shadow, #overlay div.print a.disabled, #language-selector-title > a 
+  background: transparent url('../images/sprites.png') no-repeat top left
+
+@import "header"
+@import "footer"
+@import "overlay"
+
+#grey-mask
+  background: url('../images/grey-mask.png') repeat-y top left
+  position: absolute
+  display: block
+  z-index: 1100
+  height: 100%
+  width: 60px
+
+/**
+ * Pagination
+ */
+.home #pagination-prev 
+  opacity: 0
+
+#pagination-prev 
+  position: absolute
+  z-index: 1500
+  top: 50%
+  left: 0px
+  opacity: 1
+  +transition(opacity .4s linear)
+
+  div.arrow 
+    background-position: -366px -189px
+    width: 42px
+    height: 70px
+    text-indent: -10000em
+    
+#pagination-prev:hover div.arrow 
+  background-position: -366px -290px
+
+#pagination-prev:active div.arrow 
+  background-position: -366px -390px
+
+#pagination-prev.inactive div.arrow 
+  background-position: -366px -490px
+  cursor: default
+
+.credits #pagination-next 
+  opacity: 0
+  
+#pagination-next 
+  position: absolute
+  z-index: 1500
+  top: 50%
+  right: 0
+  opacity: 1
+  +transition(opacity .4s linear)
+
+  div.arrow 
+    background-position: -471px -189px
+    width: 42px
+    height: 70px
+    text-indent: -10000em
+    
+#pagination-next:hover div.arrow 
+  background-position: -471px -290px
+
+#pagination-next:active div.arrow 
+  background-position: -471px -390px
+
+#pagination-next.inactive div.arrow 
+  background-position: -471px -490px
+  cursor: default
+  
+div.page-progress 
+  background-color: #eeeeee
+  position: absolute
+  right: 50px
+  top: 16px
+  padding: 6px
+  width: auto
+  visibility: hidden
+  opacity: 0
+
+  p.thing 
+    display: block
+    font-size: 10px
+    font-weight: bold
+    white-space: nowrap
+  
+  p.number 
+    display: block
+    font-size: 9px
+    white-space: nowrap
+
+#pagination-next div.page-progress 
+  right: 50px
+  top: 17px
+  text-align: right
+  
+#pagination-next div.page-progress,
+#pagination-next:hover div.page-progress 
+  +transition(opacity .21s linear)
+    
+#pagination-next:hover div.page-progress 
+  visibility: visible
+  opacity: 1
+    
+#pagination-prev div.page-progress 
+  left: 50px
+  right: auto
+  top: 18px
+  text-align: left
+  
+#pagination-prev div.page-progress,
+#pagination-prev:hover div.page-progress 
+  +transition(opacity .21s linear)
+  
+#pagination-prev:hover div.page-progress 
+  visibility: visible
+  opacity: 1

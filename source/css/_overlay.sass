@@ -1,0 +1,89 @@
+#overlay 
+  display: none
+  width: 100%
+  height: 100%
+  position: absolute
+  z-index: 2200
+  
+  div.bookmark 
+    // TODO subsitute with own bookmark pictures
+    background-image: url('../images/sprites.png')
+    background-position: -585px -160px
+    width: 190px
+    height: 600px
+    position: absolute
+    left: 50%
+    top: 50%
+    margin: -300px 0 0 -95px
+  
+    .content 
+      margin: 20px
+      text-align: center
+      color: #ffffff
+    
+      
+      a.close, a.close 
+        display: inline-block
+        background: #fff
+        font-size: 11px
+        font-weight: bold
+        color: #b41e21
+        padding: 6px 8px 5px 8px
+        margin: 22px 0 0 5px
+        +border-radius(6px)
+        +opacity(0.7)
+        +transition(opacity .1s linear)
+        
+      a.close:hover 
+        opacity: 1
+        
+      a.action 
+        color: #ffffff
+        background-color: #a52c23
+        font-size: 16px
+        display: block
+        font-weight: bold
+        position: relative
+        left: 20px
+        width: 90px
+        +transition(background-color .1s linear)
+        border: 1px #9c2325 solid
+        border-radius: 6px
+        padding: 9px 9px
+
+      a.action:hover 
+        background-color: #b83436
+        border: 1px #9c2325 solid
+        border-radius: 6px
+        padding: 9px 9px
+      
+      
+      a.action:active 
+        background-color: #ab383a
+        border: 1px #9c2325 solid
+        border-radius: 6px
+        padding: 9px 9px
+      
+      
+      a.action.resume 
+        margin-top: 24px
+      
+      
+      a.action.restart 
+        margin-top: 16px
+      
+      h3 
+        font-size: 22px
+        font-weight: bold
+        line-height: 1.3em
+        margin-top: 70px
+        letter-spacing: -1px
+        padding: 0 8px
+      
+      
+      p 
+        font-size: 13px
+        line-height: 1.3em
+        margin-top: 18px
+        color: #daa8a9
+        padding: 0 16px
