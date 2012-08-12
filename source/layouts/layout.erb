@@ -72,7 +72,33 @@
         <p class="instruction">SHARE THING</p>
       </div>
     </div>
-    
+    <div id="front-cover">
+      <img src="images/front-cover.jpg" width="830" height="520">
+    </div>
+    <div id="back-cover">
+      <img src="images/back-cover.jpg" data-src-flipped="images/back-cover-flipped.jpg" width="830" height="520">
+    </div>
+    <div id="pages">
+      <%= yield %>
+    </div>
+    <div id="left-page" style="width: 830px; ">
+      <img src="images/left-page.jpg" data-src-flipped="images/left-page-flipped.jpg" width="830" height="520">
+    </div>
+    <div id="right-page">
+      <div id="paperstack">
+        <div class="paper s1"></div>
+        <div class="paper s2"></div>
+        <div class="paper s3"></div>
+        <div class="paper s4"></div>
+        <div class="paper s5"></div>
+        <div class="paper s6"></div>
+        <div class="paper s7"></div>
+        <div class="shadow"></div>
+      </div>
+      <img src="images/right-page.jpg" width="830" height="520">
+    </div>
+    <canvas id="pageflip" width="1700" height="680"></canvas>
+    <div id="page-shadow-overlay"></div> 
   </div>
 
   <!-- Overlay is used to put layerd content -->
